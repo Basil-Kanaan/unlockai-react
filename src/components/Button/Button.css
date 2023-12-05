@@ -1,0 +1,15 @@
+/* Button.css */
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(127, 127, 127, 0.1); /* Default color with 10% opacity */
+    color: #fff;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.custom-button:hover {
+    background-color: hsla(0, 0%, 50%, 0.9); /* 10% darker on hover (adjust the 50% for your variable background color) */
+}
