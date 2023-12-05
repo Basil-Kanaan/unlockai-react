@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.css';
 
-const Button = ({ children, onClick, type, className }) => {
+const Button = ({children, onClick, type, className}) => {
     return (
         <button className={`custom-button ${className}`} type={type} onClick={onClick}>
             {children}
@@ -19,7 +19,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-    onClick: () => {},
+    onClick: () => {
+    },
     type: 'button',
     className: '',
 };
