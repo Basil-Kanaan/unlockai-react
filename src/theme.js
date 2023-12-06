@@ -2,14 +2,23 @@ import {createTheme} from '@mui/material/styles';
 
 const theme = createTheme({
     typography: {
-        fontFamily: 'Poppins',
-        color: '#ffffff',
+        fontFamily: 'Inter, sans-serif',
         h1: {
-            fontSize: '5rem',
-            fontWeight: 'bold',
-            textShadow: '2px 2px 10px rgba(0, 0, 0, 0.9)',
+            fontSize: '4rem',
+            fontWeight: '800',
         },
 
+        h2: {
+            fontSize: '3rem',
+            fontWeight: '600',
+        },
+        h3: {
+            fontSize: '2rem',
+            fontWeight: '600',
+        },
+        p: {
+            fontsize: '0.5rem'
+        },
     },
 });
 
