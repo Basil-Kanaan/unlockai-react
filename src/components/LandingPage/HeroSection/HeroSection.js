@@ -69,7 +69,7 @@ const HeroSection = () => {
                 </Box>
                 {/* Right Section - Video */}
                 <Box className="right-section"
-                     sx={{flex: 1, marginLeft: {xs: 0, md: 4}, mb: {xs: 4, md: 0}, position: 'relative'}}>
+                     sx={{flex: 1, mb: {xs: 4, md: 0}, position: 'relative'}}>
                     <iframe
                         width="560"
                         height="315"

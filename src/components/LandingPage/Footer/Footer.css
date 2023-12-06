@@ -1,0 +1,18 @@
+/* footer.css */
+.footer-text {
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.footer-logo-text {
+    background: linear-gradient(90deg, #2898FF, #AB64F1); /* Gradient from left to right */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+/*.footer-logo-holder {*/
+/*    background-color: #fff; !* White background *!*/
+/*    padding: 16px; !* 2 padding on all sides *!*/
+/*    border-radius: 8px; !* Rounded corners *!*/
+/*}*/

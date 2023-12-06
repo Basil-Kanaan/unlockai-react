@@ -6,6 +6,7 @@ import Testimonials from '../components/LandingPage/Testimonials/Testimonials';
 import Pricing from '../components/LandingPage/Pricing/Pricing';
 import FAQ from '../components/LandingPage/FAQ/FAQ';
 import InfluencerMarquee from "../components/LandingPage/InfluencerMarquee/InfluencerMarquee";
+import Footer from "../components/LandingPage/Footer/Footer";
 
 const Home = () => {
 
@@ -15,10 +16,11 @@ const Home = () => {
             <InfluencerMarquee/>
 
             <Features/>
-            <HowItWorks/>
-            <Testimonials/>
-            <Pricing/>
-            <FAQ/>
+            <HowItWorks />
+            <Testimonials />
+            <Pricing />
+            <FAQ />
+            <Footer />
         </div>
     );
 };
