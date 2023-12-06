@@ -1,25 +1,40 @@
 import React from 'react';
-import { Typography, Box, Container, TextField } from '@mui/material';
+import {Box, Container, TextField, Typography} from '@mui/material';
 import "./HeroSection.css";
 import MiniFeature from "../../MiniFeature/MiniFeature";
-import { AddBoxOutlined, CalendarMonthOutlined , AccountCircleOutlined, ChatOutlined, KeyboardVoiceOutlined } from '@mui/icons-material';
+import {
+    AccountCircleOutlined,
+    AddBoxOutlined,
+    CalendarMonthOutlined,
+    ChatOutlined,
+    KeyboardVoiceOutlined
+} from '@mui/icons-material';
 
 const HeroSection = () => {
     const minifeature_bg = "linear-gradient(90deg, rgba(40, 152, 255, 0.5), rgba(171, 100, 241, 0.5))";
 
     return (
-        <Box className="hero-section" sx={{ mt: "100px", minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <Container maxWidth="lg" className="hero-section-main" sx={{ flexGrow: 1, display: "flex", justifyContent: "center", alignItems: "center", flexDirection: { xs: 'column-reverse', md: 'row' }, my: { xs: 5, md: 0 } }}>
+        <Box className="hero-section"
+             sx={{mt: "100px", minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center"}}>
+            <Container maxWidth="lg" className="hero-section-main" sx={{
+                flexGrow: 1,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: {xs: 'column-reverse', md: 'row'},
+                my: {xs: 5, md: 0}
+            }}>
                 {/* Left Section - Content */}
-                <Box className="left-section" sx={{ flex: 1, pr: { xs: 0, md: 10 }, maxWidth: 600, textAlign: "left" }}>
+                <Box className="left-section" sx={{flex: 1, pr: {xs: 0, md: 10}, maxWidth: 600, textAlign: "left"}}>
                     <Typography variant="h1">AI-Powered Social Media Mastery</Typography>
                     <Typography variant="h3" className="gradient-text">Smart. Simple. Social</Typography>
-                    <Typography variant="body1" sx={{ mt: 5, }}>Sign up for a 7-day Free Trial, no credit card required!</Typography>
+                    <Typography variant="body1" sx={{mt: 5,}}>Sign up for a 7-day Free Trial, no credit card
+                        required!</Typography>
                     {/* Form */}
                     <form>
-                        <Box sx={{ display: 'flex', gap: 2, marginTop: 2 }}>
-                            <TextField label="Name" variant="outlined" fullWidth />
-                            <TextField label="Email" variant="outlined" fullWidth />
+                        <Box sx={{display: 'flex', gap: 2, marginTop: 2}}>
+                            <TextField label="Name" variant="outlined" fullWidth/>
+                            <TextField label="Email" variant="outlined" fullWidth/>
                         </Box>
                         <Box
                             component="button"
@@ -45,13 +60,16 @@ const HeroSection = () => {
                     </form>
 
                     {/* Terms of Use and Privacy Policy */}
-                    <Typography variant="body2" sx={{ color: '#C3B1E1', marginTop: 1, textAlign: 'center', fontWeight: 'bold' }}>
-                        <a href="/terms" style={{ color: '#C3B1E1', textDecoration: 'underline' }}>Terms of Use</a> and <a href="/privacy" style={{ color: '#C3B1E1', textDecoration: 'underline' }}>Privacy Policy</a>.
+                    <Typography variant="body2"
+                                sx={{color: '#C3B1E1', marginTop: 1, textAlign: 'center', fontWeight: 'bold'}}>
+                        <a href="/terms" style={{color: '#C3B1E1', textDecoration: 'underline'}}>Terms of Use</a> and <a
+                        href="/privacy" style={{color: '#C3B1E1', textDecoration: 'underline'}}>Privacy Policy</a>.
                     </Typography>
 
                 </Box>
                 {/* Right Section - Video */}
-                <Box className="right-section" sx={{ flex: 1, marginLeft: { xs: 0, md: 4 }, mb: {xs: 4, md: 0}, position: 'relative' }}>
+                <Box className="right-section"
+                     sx={{flex: 1, marginLeft: {xs: 0, md: 4}, mb: {xs: 4, md: 0}, position: 'relative'}}>
                     <iframe
                         width="560"
                         height="315"
@@ -73,11 +91,11 @@ const HeroSection = () => {
                 justifyContent: 'space-evenly', // Equally distribute space horizontally
                 flexWrap: 'wrap', // Allow items to wrap to the next line
             }}>
-                <MiniFeature icon={<AddBoxOutlined />} text="AI Caption & Hashtags" gradient={minifeature_bg} />
-                <MiniFeature icon={<CalendarMonthOutlined />} text="Automated Scheduling" gradient={minifeature_bg} />
-                <MiniFeature icon={<AccountCircleOutlined />} text="AI Industry Expert" gradient={minifeature_bg} />
-                <MiniFeature icon={<ChatOutlined />} text="Speech to Text" gradient={minifeature_bg} />
-                <MiniFeature icon={<KeyboardVoiceOutlined />} text="AI Voiceover" gradient={minifeature_bg} />
+                <MiniFeature icon={<AddBoxOutlined/>} text="AI Caption & Hashtags" gradient={minifeature_bg}/>
+                <MiniFeature icon={<CalendarMonthOutlined/>} text="Automated Scheduling" gradient={minifeature_bg}/>
+                <MiniFeature icon={<AccountCircleOutlined/>} text="AI Industry Expert" gradient={minifeature_bg}/>
+                <MiniFeature icon={<ChatOutlined/>} text="Speech to Text" gradient={minifeature_bg}/>
+                <MiniFeature icon={<KeyboardVoiceOutlined/>} text="AI Voiceover" gradient={minifeature_bg}/>
             </Box>
         </Box>
     );

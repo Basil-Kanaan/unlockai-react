@@ -65,16 +65,6 @@ const NavBar = () => {
             }}>
                 <ListItemText primary="FAQ"/>
             </ListItem>
-            <ListItem component={RouterLink} to="/signin" onClick={() => {
-                toggleDrawer();
-            }}>
-                <ListItemText primary="Sign In"/>
-            </ListItem>
-            <ListItem component={RouterLink} to="/signup" onClick={() => {
-                toggleDrawer();
-            }}>
-                <ListItemText primary="Join Us"/>
-            </ListItem>
         </List>
     );
 
@@ -90,6 +80,25 @@ const NavBar = () => {
         if (isSmallScreen) {
             return (
                 <>
+                    {/* Signup and login buttons on the right */}
+                    <Box className="nav-signup-login" sx={{display: 'flex'}}>
+                        <Typography
+                            component={RouterLink}
+                            to="/signin"
+                            className="navbar-link"
+                        >
+                            Sign In
+                        </Typography>
+                        <Typography
+                            component={RouterLink}
+                            to="/signup"
+                            className="navbar-link"
+                            sx={{background: "#CDCDCD"}}
+                        >
+                            Join Us
+                        </Typography>
+                    </Box>
+
                     {/* Menu icon for small screens */}
                     <IconButton onClick={toggleDrawer} edge="end" color="black" aria-label="menu">
                         <MenuIcon/>
@@ -187,7 +196,7 @@ const NavBar = () => {
                     <img src={logo} alt="Logo" className="navbar-logo-image"/>
                     <Typography variant="h6" className="navbar-logo-text"
                                 sx={{fontWeight: 'bold', fontSize: '30px', marginLeft: '8px'}}>
-                        UnlockAi
+                        UnlockAI
                     </Typography>
                 </Box>
 

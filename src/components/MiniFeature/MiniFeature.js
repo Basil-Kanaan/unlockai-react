@@ -1,9 +1,9 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import {Box, Typography} from '@mui/material';
 
-const Minifeature = ({ icon, text, gradient }) => {
+const Minifeature = ({icon, text, gradient}) => {
     return (
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', margin: '20px' }}>
+        <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', margin: '20px'}}>
             {/* First Row - Icon with Gradient Background */}
             <Box
                 sx={{
@@ -21,7 +21,7 @@ const Minifeature = ({ icon, text, gradient }) => {
             </Box>
 
             {/* Second Row - Text */}
-            <Typography variant="body1" sx={{ marginTop: '10px' }}>
+            <Typography variant="body1" sx={{marginTop: '10px'}}>
                 {text}
             </Typography>
         </Box>
