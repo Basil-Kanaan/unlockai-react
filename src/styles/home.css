@@ -11,4 +11,5 @@
     outline: none;
     z-index: 100;
     font-weight: bolder;
+    border-radius: 3rem;
 }

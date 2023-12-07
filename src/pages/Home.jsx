@@ -11,6 +11,7 @@ import Footer from "../components/LandingPage/Footer/Footer";
 import "../styles/home.css";
 import CTA from "../components/LandingPage/CTA/CTA";
 import Trial from "../components/LandingPage/Trial/Trial";
+import Background from "../components/LandingPage/Background/Background";
 
 const Home = () => {
 
@@ -18,15 +19,16 @@ const Home = () => {
             <div>
                     <Hero id={""} />
                     <CTA id={""}
-                         left="Unlock Your Social Media Mastery With UnlockAI"
-                         right="UnlockAI simplifies social media with advanced AI. We tune into your brand’s voice, aiding in content creation, scheduling, and audience engagement. Our intuitive tools let you grow your presence effortlessly while we manage the details. With UnlockAI, strategically enhance your digital footprint."
+                         left="Expand your Reach in a few Clicks!"
+                         right="Supercharge your game with UnlockAI! Create, schedule, and engage with ease. 🚀 Elevate your online presence with a click – it's time to shine and stand out! Ready to level up?"
                     />
                     <InfluencerMarquee id={""}/>
 
                     <Features id={"features-section"}/>
                     <CTA id={""}
-                         left="AI Scheduling, so you don’t have to!"
+                         left="AI Scheduling, for You!"
                          right="UnlockAI allows you to create and schedule your social media posts all in one! Talk to experts to get the best advice."
+                         button="Unlock your Potential"
                     />
                     <HowItWorks id={""} />
                     <Testimonials id={"testimonials-section"} />
@@ -36,6 +38,7 @@ const Home = () => {
                     <Footer />
 
                 <button className="try-for-free-button">TRY FOR FREE</button>
+                <Background />
             </div>
         );
 };

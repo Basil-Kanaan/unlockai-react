@@ -1,0 +1,23 @@
+/* CTA.css */
+.cta-card {
+    background: transparent;
+    padding: 2rem;
+    text-align: left;
+}
+
+.cta-button {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    padding: 0.8rem 5rem;
+    width: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: black;
+    font-size: 1.1rem;
+}
+
+.cta-button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

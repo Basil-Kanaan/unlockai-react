@@ -1,33 +1,45 @@
 // CTA.js
 
 import React from 'react';
-import { Box, Card, CardContent, Typography } from '@mui/material';
+import { Box, Card, CardContent, Container, Typography } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
+import './CTA.css';
 
 const CTA = ({ left, right }) => {
     return (
-        <Box
-            sx={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                padding: '40px',
-                my: 20
-            }}
-        >
-            {/* Left Section */}
-            <Typography variant="h2" sx={{ flex: 1 }}>
-                {left}
-            </Typography>
+        <Container maxWidth={"xl"}>
+            <Box
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    padding: '40px',
+                    my: 20,
+                    gap: 20,
+                }}
+            >
+                {/* Left Section */}
+                <Typography variant="h2" sx={{ flex: 1, textAlign: "left"}}>
+                    {left}
+                </Typography>
 
-            {/* Right Section */}
-            <Card sx={{ flex: 1, ml: 4 }}>
-                <CardContent>
-                    <Typography variant="body1">
-                        {right}
+                {/* Right Section */}
+                <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "2rem" }}>
+                    <Card className={"cta-card"}>
+                        <CardContent>
+                            <Typography fontSize={"1.1rem"} fontWeight="600" sx={{color: "rgba(0,0,0,0.5)"}} variant="body1">{right}</Typography>
+                        </CardContent>
+                    </Card>
+                    <Typography
+                        component={RouterLink}
+                        to="/signup"
+                        className="cta-button"
+                    >
+                        Unlock your Potential
                     </Typography>
-                </CardContent>
-            </Card>
-        </Box>
+                </div>
+            </Box>
+        </Container>
     );
 };
 
