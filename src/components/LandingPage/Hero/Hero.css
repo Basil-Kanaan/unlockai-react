@@ -1,8 +1,9 @@
-/* HeroSection.css */
+/* Hero.css */
 
 .hero-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 40px;
     width: 100%;
@@ -21,9 +22,16 @@
     flex-direction: column;
 }
 
+.left-section-main {
+    text-align: left;
+}
+
 .right-section {
     flex: 1;
+    background: linear-gradient(135deg, rgba(40, 152, 255, 0.5), rgba(171, 100, 241, 0.5));
+    border-radius: 20px;
 }
+
 
 .right-section iframe {
     width: 100%;

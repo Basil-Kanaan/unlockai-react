@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography } from "@mui/material";
+import {Box, Container, Typography} from "@mui/material";
 import Marquee from "react-fast-marquee";
 import InfluencerCard from "./InfluencerCard";
 
@@ -12,9 +12,9 @@ const InfluencerMarquee = () => {
     }));
 
     return (
-        <div>
+        <Box sx={{my: 20}}>
             <Container sx={{ marginBottom: "20px" }}>
-                <Typography variant={"h2"} sx={{ textAlign: "left" }}>
+                <Typography variant={"h2"} sx={{ width: "40rem", textAlign: "left" }}>
                     Trusted by Influencers Across the Globe!
                 </Typography>
             </Container>
@@ -23,7 +23,7 @@ const InfluencerMarquee = () => {
                     <InfluencerCard key={index} {...influencer} />
                 ))}
             </Marquee>
-        </div>
+        </Box>
     );
 };
 

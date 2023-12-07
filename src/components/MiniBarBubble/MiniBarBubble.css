@@ -1,0 +1,16 @@
+/* MiniBarBubble.css */
+
+.mini-bar-bubble {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 16px;
+    padding: 2px 15px;
+    width: fit-content;
+}
+
+.dot {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin: 0 10px;
+}

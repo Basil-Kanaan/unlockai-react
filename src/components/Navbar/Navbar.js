@@ -78,36 +78,8 @@ const NavBar = () => {
 
     const renderLinks = () => {
         if (isSmallScreen) {
-            return (
-                <>
-                    {/* Signup and login buttons on the right */}
-                    <Box className="nav-signup-login" sx={{display: 'flex'}}>
-                        <Typography
-                            component={RouterLink}
-                            to="/signin"
-                            className="navbar-link"
-                        >
-                            Sign In
-                        </Typography>
-                        <Typography
-                            component={RouterLink}
-                            to="/signup"
-                            className="navbar-link"
-                            sx={{background: "#CDCDCD"}}
-                        >
-                            Join Us
-                        </Typography>
-                    </Box>
-
-                    {/* Menu icon for small screens */}
-                    <IconButton onClick={toggleDrawer} edge="end" color="black" aria-label="menu">
-                        <MenuIcon/>
-                    </IconButton>
-                </>
-            );
+            return (<></>);
         } else {
-            {/* Links for larger screens */
-            }
             return (
                 <>
                     {/* Links in the middle */}
@@ -162,27 +134,6 @@ const NavBar = () => {
                             FAQ
                         </Typography>
                     </Box>
-
-                    {/* Signup and login buttons on the right */}
-                    <Box className="nav-signup-login" sx={{display: 'flex'}}>
-                        <Typography
-                            component={RouterLink}
-                            to="/signin"
-                            className="navbar-link"
-                        >
-                            Sign In
-                        </Typography>
-                        <Typography
-                            component={RouterLink}
-                            to="/signup"
-                            className="navbar-link"
-                            sx={{background: "#CDCDCD"}}
-                        >
-                            Join Us
-                        </Typography>
-                    </Box>
-
-
                 </>
             );
         }
@@ -194,13 +145,38 @@ const NavBar = () => {
                 {/* Logo on the left */}
                 <Box className="nav-logo" sx={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
                     <img src={logo} alt="Logo" className="navbar-logo-image"/>
-                    <Typography variant="h6" className="navbar-logo-text"
+                    <Typography variant="h6" className="gradient-text"
                                 sx={{fontWeight: 'bold', fontSize: '30px', marginLeft: '8px'}}>
                         UnlockAI
                     </Typography>
                 </Box>
 
                 {renderLinks()}
+
+                {/* Signup and login buttons on the right */}
+                <Box className="nav-right-links" sx={{display: 'flex'}}>
+                    <Typography
+                        component={RouterLink}
+                        to="/signin"
+                        className="navbar-link"
+                    >
+                        Sign In
+                    </Typography>
+                    <Typography
+                        component={RouterLink}
+                        to="/signup"
+                        className="navbar-link"
+                        sx={{background: "#CDCDCD"}}
+                    >
+                        Join Us
+                    </Typography>
+                    {isSmallScreen && (
+                        <IconButton onClick={toggleDrawer} edge="end" color="black" aria-label="menu">
+                            <MenuIcon />
+                        </IconButton>
+                    )}
+                </Box>
+
 
                 {/* Drawer for small screens */}
                 <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer}>

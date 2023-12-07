@@ -1,0 +1,14 @@
+.try-for-free-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 100;
+    font-weight: bolder;
+}

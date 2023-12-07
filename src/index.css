@@ -4,3 +4,10 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+
+.gradient-text {
+    background: linear-gradient(90deg, #2898FF, #AB64F1); /* Gradient from left to right */
+    -webkit-background-clip: text;
+    color: transparent;
+}

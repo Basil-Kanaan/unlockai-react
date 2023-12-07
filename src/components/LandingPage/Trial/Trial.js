@@ -1,10 +1,8 @@
-// FAQ.js
-
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import MiniBarBubble from "../../MiniBarBubble/MiniBarBubble";
 
-const FAQ = () => {
+const Trial = () => {
     return (
         <Box sx={{ textAlign: 'center', padding: '40px', my: 20 }}>
             {/* FAQ Title */}
@@ -40,4 +38,4 @@ const FAQ = () => {
     );
 };
 
-export default FAQ;
+export default Trial;
