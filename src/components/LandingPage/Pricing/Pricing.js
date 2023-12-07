@@ -3,9 +3,9 @@
 import React from 'react';
 import { Box, Card, CardContent, Typography, Button } from '@mui/material';
 
-const Pricing = () => {
+const Pricing = ({id}) => {
     return (
-        <Box sx={{ textAlign: 'center', padding: '40px', my: 20 }}>
+        <Box id={id} sx={{ textAlign: 'center', py: 20 }}>
             {/* Title */}
             <Typography variant="h2" sx={{ mb: 4 }}>
                 Best Pricing Available.

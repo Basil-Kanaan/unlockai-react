@@ -3,16 +3,15 @@
 import React from 'react';
 import { Box, Button, Card, CardContent, Grid, Typography } from '@mui/material';
 
-const Features = () => {
+const Features = ({id}) => {
     return (
-        <Box
+        <Box id={id}
             sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
                 textAlign: 'center',
-                padding: '40px',
-                my: 20
+                py: 20
             }}
         >
             {/* Section Title */}

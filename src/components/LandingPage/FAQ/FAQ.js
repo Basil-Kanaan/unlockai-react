@@ -4,9 +4,9 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import MiniBarBubble from "../../MiniBarBubble/MiniBarBubble";
 
-const FAQ = () => {
+const FAQ = ({id}) => {
     return (
-        <Box sx={{ textAlign: 'center', padding: '40px', my: 20 }}>
+        <Box id={id} sx={{ textAlign: 'center', py: 20 }}>
             {/* FAQ Title */}
             <MiniBarBubble
 

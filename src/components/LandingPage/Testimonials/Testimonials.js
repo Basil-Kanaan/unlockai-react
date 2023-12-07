@@ -3,9 +3,9 @@
 import React from 'react';
 import { Box, Card, CardContent, Typography, Grid } from '@mui/material';
 
-const Testimonials = () => {
+const Testimonials = ({id}) => {
     return (
-        <Box sx={{ textAlign: 'center', padding: '40px', my: 20}}>
+        <Box id={id} sx={{ textAlign: 'center', py: 20}}>
             {/* Header */}
             <Typography variant="h2" sx={{ mb: 4 }}>
                 Trusted by Millions.
