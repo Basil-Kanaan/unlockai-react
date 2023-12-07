@@ -96,7 +96,7 @@ const NavBar = () => {
                         <Typography
                             component={RouterLink}
                             to="/"
-                            onClick={scrollToTop}
+                            onClick={() => scrollToSection('features-section')}
                             className="navbar-link"
                         >
                             Features
@@ -104,7 +104,7 @@ const NavBar = () => {
                         <Typography
                             component={RouterLink}
                             to="/"
-                            onClick={scrollToTop}
+                            onClick={() => scrollToSection('')}
                             className="navbar-link"
                         >
                             How it Works
@@ -112,7 +112,7 @@ const NavBar = () => {
                         <Typography
                             component={RouterLink}
                             to="/"
-                            onClick={scrollToTop}
+                            onClick={() => scrollToSection('testimonials-section')}
                             className="navbar-link"
                         >
                             Testimonials
@@ -120,7 +120,7 @@ const NavBar = () => {
                         <Typography
                             component={RouterLink}
                             to="/"
-                            onClick={scrollToTop}
+                            onClick={() => scrollToSection('pricing-section')}
                             className="navbar-link"
                         >
                             Pricing
@@ -128,7 +128,7 @@ const NavBar = () => {
                         <Typography
                             component={RouterLink}
                             to="/"
-                            onClick={scrollToTop}
+                            onClick={() => scrollToSection('faq-section')}
                             className="navbar-link"
                         >
                             FAQ
