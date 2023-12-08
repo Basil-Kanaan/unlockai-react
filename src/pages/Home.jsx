@@ -12,6 +12,7 @@ import "../styles/home.css";
 import CTA from "../components/LandingPage/CTA/CTA";
 import Trial from "../components/LandingPage/Trial/Trial";
 import Background from "../components/LandingPage/Background/Background";
+import Suggestions from "../components/LandingPage/Suggestions/Suggestions";
 
 const Home = () => {
 
@@ -34,6 +35,7 @@ const Home = () => {
                     <Testimonials id={"testimonials-section"} />
                     <Pricing id={"pricing-section"} />
                     <FAQ id={"faq-section"} />
+                    <Suggestions />
                     <Trial id={""} />
                     <Footer />
 

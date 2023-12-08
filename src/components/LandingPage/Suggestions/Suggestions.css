@@ -1,0 +1,23 @@
+
+/* Suggestions.css */
+.suggestions-card {
+    background: transparent;
+    padding: 2rem;
+    text-align: left;
+}
+
+.suggestions-button {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    padding: 0.8rem 2rem;
+    width: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: rgba(40, 152, 255, 0.8);
+    font-size: 1.1rem;
+}
+
+.suggestions-button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
