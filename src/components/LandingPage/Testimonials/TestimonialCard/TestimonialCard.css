@@ -1,0 +1,24 @@
+/* TestimonialCard.css */
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);  /* Transparent blur background */
+    background: rgba(255, 255, 255, 0.2);  /* Fallback for non-supported browsers */
+    border: 1px solid #000;  /* Black stroke outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+}
+
+.testimonial-card img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
