@@ -1,7 +1,12 @@
 // Features.js
 
 import React from 'react';
-import { Box, Button, Card, CardContent, Grid, Typography } from '@mui/material';
+
+import {Box, Container, Grid, Typography} from '@mui/material';
+import FeatureCard from "./FeatureCard/FeatureCard";
+import {Link as RouterLink} from "react-router-dom";
+
+import "./Features.css";
 
 const Features = ({id}) => {
     return (
@@ -11,37 +16,42 @@ const Features = ({id}) => {
                 flexDirection: 'column',
                 alignItems: 'center',
                 textAlign: 'center',
-                py: 20
             }}
         >
             {/* Section Title */}
             <Typography variant="h2">
-                AI Tools Tailored <br/>for Social Media Success
+                AI Tools<br/>Tailored for Success
             </Typography>
 
             {/* Grid of Cards */}
-            <Grid container spacing={3} sx={{ mt: 4, mb: 4 }}>
-                {/* Repeat the Card component for each feature */}
-                {/* Example Card: */}
-                <Grid item xs={12} sm={6} md={4}>
-                    <Card>
-                        <CardContent>
-                            <Typography variant="h5">
-                                Feature Name
-                            </Typography>
-                            <Typography variant="body2">
-                                Feature Description Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </Typography>
-                        </CardContent>
-                    </Card>
+            <Container maxWidth={"xl"}>
+                <Grid container spacing={3} sx={{ my: 4 }}>
+                    {/* Repeat the Card component for each feature */}
+                    {/* Example Card: */}
+                    <Grid item xs={12} sm={6} md={4}>
+                        <FeatureCard title="Post Scheduler" description="Plan and automate your posts with AI-enabled scheduling."/>
+                        <FeatureCard title="AI Industry Expert" description="Create captivating captions with AI-driven creativity."/>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4}>
+                        <FeatureCard title="AI Caption & Hashtag Suggestions" description="Boost your visibility with AI-selected hashtags & captions."/>
+                        <FeatureCard title="Speech to Text" description="Get AI to transform your voice into text!"/>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4}>
+                        <FeatureCard title="Social Media AI Expert" description="Speak with our expert to create the best posts!"/>
+                        <FeatureCard title="AI Voiceover" description="Allow AI to story tell your content!"/>
+                    </Grid>
                 </Grid>
-                {/* Repeat for other features */}
-            </Grid>
+            </Container>
 
             {/* See All Features Button */}
-            <Button variant="contained" color="primary">
-                SEE ALL FEATURES
-            </Button>
+            <Typography
+                component={RouterLink}
+                to="/signup"
+                className="features-button"
+                fontWeight="600"
+            >
+                SEE ALL<br/>FEATURES
+            </Typography>
         </Box>
     );
 };

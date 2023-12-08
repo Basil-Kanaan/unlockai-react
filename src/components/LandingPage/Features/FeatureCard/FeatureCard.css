@@ -1,0 +1,27 @@
+/* TestimonialCard.css */
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.3),
+            rgba(40, 152, 255, 0.3) 70%,
+            rgba(171, 100, 241, 0.3)
+    );
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+}
+
+.feature-card img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
