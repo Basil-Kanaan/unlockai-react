@@ -1,4 +1,4 @@
-/* TestimonialCard.css */
+/* FeatureCard.css */
 
 .feature-card {
     display: flex;
@@ -16,12 +16,14 @@
     margin: 10px;
     height: 250px;
     width: 350px;
+    overflow: hidden; /* Ensure the content doesn't overflow */
 }
 
 .feature-card img {
     width: 100%;
+    height: auto; /* Maintain aspect ratio */
     max-width: 100%;
-    max-height: 200px;
+    max-height: 100%;
     border-radius: 8px;
     margin-top: 10px;
 }
