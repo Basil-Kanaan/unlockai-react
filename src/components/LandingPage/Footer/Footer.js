@@ -14,7 +14,7 @@ const Footer = () => {
                 background: 'linear-gradient(90deg, #2898FF, #6F5DCA)',
                 color: '#fff',
                 py: 4,
-                height: "50vh",
+                height: "600px",
                 pt: "5"
             }}
         >

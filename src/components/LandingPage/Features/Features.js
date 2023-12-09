@@ -25,7 +25,7 @@ const Features = ({id}) => {
             </Typography>
 
             {/* Grid of Cards */}
-            <Container maxWidth={"xl"}>
+            <Container maxWidth={"lg"}>
                 <Grid container spacing={3} sx={{ my: 4 }}>
                     {/* Repeat the Card component for each feature */}
                     {/* Example Card: */}

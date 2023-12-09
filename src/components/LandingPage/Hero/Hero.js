@@ -103,6 +103,7 @@ const Hero = () => {
                 alignItems: 'center', // Center items vertically
                 justifyContent: 'space-evenly', // Equally distribute space horizontally
                 flexWrap: 'wrap', // Allow items to wrap to the next line
+                mt: 5
             }}>
                 <MiniFeature icon={<AddBoxOutlined/>} text="AI Caption & Hashtags" gradient={minifeature_bg}/>
                 <MiniFeature icon={<CalendarMonthOutlined/>} text="Automated Scheduling" gradient={minifeature_bg}/>
