@@ -1,0 +1,16 @@
+/* Minifeature.css */
+
+/* Default styling for the Minifeature component */
+.minifeature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect - raise the icon container on hover */
+.minifeature:hover {
+    transform: translateY(-5px); /* Adjust the value for the desired lift effect */
+}

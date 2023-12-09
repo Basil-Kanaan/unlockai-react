@@ -1,9 +1,10 @@
 import React from 'react';
 import {Box, Typography} from '@mui/material';
+import "./MiniFeature.css"
 
 const Minifeature = ({icon, text, gradient}) => {
     return (
-        <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', margin: '20px'}}>
+        <Box className="minifeature">
             {/* First Row - Icon with Gradient Background */}
             <Box
                 sx={{
