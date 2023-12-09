@@ -1,7 +1,6 @@
 import React from 'react';
 import Hero from '../components/LandingPage/Hero/Hero';
 import Features from '../components/LandingPage/Features/Features';
-import HowItWorks from '../components/LandingPage/HowItWorks/HowItWorks';
 import Testimonials from '../components/LandingPage/Testimonials/Testimonials';
 import Pricing from '../components/LandingPage/Pricing/Pricing';
 import FAQ from '../components/LandingPage/FAQ/FAQ';
@@ -31,7 +30,6 @@ const Home = () => {
                          right="UnlockAI allows you to create and schedule your social media posts all in one! Talk to experts to get the best advice."
                          button="Unlock your Potential"
                     />
-                    <HowItWorks id={""} />
                     <Testimonials id={"testimonials-section"} />
                     <Pricing id={"pricing-section"} />
                     <FAQ id={"faq-section"} />
