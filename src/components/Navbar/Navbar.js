@@ -104,14 +104,6 @@ const NavBar = () => {
                         <Typography
                             component={RouterLink}
                             to="/"
-                            onClick={() => scrollToSection('')}
-                            className="navbar-link"
-                        >
-                            How it Works
-                        </Typography>
-                        <Typography
-                            component={RouterLink}
-                            to="/"
                             onClick={() => scrollToSection('testimonials-section')}
                             className="navbar-link"
                         >
