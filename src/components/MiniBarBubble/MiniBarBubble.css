@@ -3,9 +3,11 @@
 .mini-bar-bubble {
     display: inline-flex;
     align-items: center;
-    border-radius: 16px;
-    padding: 2px 25px;
+    border-radius: 8px;
+    padding: 1px 25px;
     width: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust values as needed */
+    /*background: linear-gradient(to bottom, transparent 0%, transparent 80%, black 100%);*/
 }
 
 .dot {
