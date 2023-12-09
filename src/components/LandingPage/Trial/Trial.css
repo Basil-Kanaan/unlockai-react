@@ -1,0 +1,65 @@
+/* Trial.css */
+.trial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card-outer {
+    background: linear-gradient(109deg, #5FABE0 0%, #7F64E6 100%);
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+
+.main-card-inner {
+    background: linear-gradient(109deg, #69B3F9 0%, #8973F5 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 16px;
+}
+
+.logo-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.logo-bubble {
+    background: black;
+    color: white;
+    border-radius: 12px;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.65rem;
+    margin-right: 1rem;
+}
+
+.logo-text {
+    font-size: 0.65rem;
+}
+
+.trial-title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.description {
+    color: #D3D3D3; /* Light gray */
+    margin-bottom: 1rem;
+}
+
+.trial-button {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    padding: 1rem 2rem;
+    width: fit-content;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #a69bfd;
+    font-size: 1.1rem;
+}
+
