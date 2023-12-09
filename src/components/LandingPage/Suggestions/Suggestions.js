@@ -13,7 +13,7 @@ const Suggestions = () => {
                     justifyContent: 'space-between',
                     alignItems: 'center',
                     padding: '40px',
-                    my: 20,
+                    my: 10,
                     gap: 10,
                 }}
             >

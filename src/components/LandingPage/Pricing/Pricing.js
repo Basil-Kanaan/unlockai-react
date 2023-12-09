@@ -5,7 +5,7 @@ import { Box, Card, CardContent, Typography, Button } from '@mui/material';
 
 const Pricing = ({id}) => {
     return (
-        <Box id={id} sx={{ textAlign: 'center', py: 20 }}>
+        <Box id={id} sx={{ textAlign: 'center', py: 10 }}>
             {/* Title */}
             <Typography variant="h2" sx={{ mb: 4 }}>
                 Best Pricing Available.

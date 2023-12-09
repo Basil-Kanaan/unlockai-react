@@ -15,7 +15,7 @@ const FAQ = ({ id }) => {
     };
 
     return (
-        <Box id={id} sx={{ textAlign: 'center', py: 20 }}>
+        <Box id={id} sx={{ textAlign: 'center', py: 10 }}>
             {/* FAQ Title */}
             <MiniBarBubble
                 backgroundColor="rgba(96, 2, 124, 0.15)"
