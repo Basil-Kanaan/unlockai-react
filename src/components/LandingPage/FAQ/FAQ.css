@@ -1,0 +1,7 @@
+/* FAQ.css */
+
+.FAQ-container {
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Black outline border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 5rem; /* Add padding for a cleaner look */
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
 import MiniBarBubble from "../../MiniBarBubble/MiniBarBubble";
 import FAQAccordion from './FAQAccordion';
+import './FAQ.css';
 
 const FAQ = ({ id }) => {
     // FAQ Dictionary
@@ -40,7 +41,7 @@ const FAQ = ({ id }) => {
             </Typography>
 
             {/* FAQ Accordions */}
-            <Container maxWidth={"md"}>
+            <Container maxWidth={"lg"} className={"FAQ-container"}>
                 {Object.keys(QA).map((summary, index) => (
                     <FAQAccordion
                         key={index}
