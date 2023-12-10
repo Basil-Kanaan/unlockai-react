@@ -12,13 +12,13 @@ import CTA from "../components/LandingPage/CTA/CTA";
 import Trial from "../components/LandingPage/Trial/Trial";
 import Background from "../components/LandingPage/Background/Background";
 import Suggestions from "../components/LandingPage/Suggestions/Suggestions";
-import NavBar from "../components/NavBar/NavBar";
+import Navbar from "../components/Navbar/Navbar";
 
 const Home = () => {
     const [navBarHeight, setNavBarHeight] = useState(0);
 
     useEffect(() => {
-        // Get the height of the NavBar
+        // Get the height of the Navbar
         const navbar = document.querySelector('.navbar');
         if (navbar) {
             setNavBarHeight(navbar.offsetHeight);
@@ -78,7 +78,7 @@ const Home = () => {
                 <Footer/>
             </div>
 
-            <NavBar/>
+            <Navbar/>
             <Background/>
             <button className="try-for-free-button">TRY FOR FREE</button>
         </div>

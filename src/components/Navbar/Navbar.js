@@ -1,4 +1,4 @@
-// NavBar.js
+// Navbar.js
 import React, {useState} from 'react';
 import {
     AppBar,
@@ -14,10 +14,10 @@ import {
 } from '@mui/material';
 import {Menu as MenuIcon} from '@mui/icons-material';
 import {Link as RouterLink} from 'react-router-dom';
-import './NavBar.css';
+import './Navbar.css';
 import logo from "../../assets/images/logo.png";
 
-const NavBar = () => {
+const Navbar = () => {
     const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
     const [drawerOpen, setDrawerOpen] = useState(false);
 
@@ -188,4 +188,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default Navbar;
