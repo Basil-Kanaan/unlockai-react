@@ -1,50 +1,71 @@
 // Pricing.js
 
 import React from 'react';
-import { Box, Card, CardContent, Typography, Button } from '@mui/material';
+import {Box, Container, Grid, Typography} from '@mui/material';
+import PackageCard from './PackageCard/PackageCard';
 
 const Pricing = ({id}) => {
+    // Define the pricing packages
+    const pricingPackages = [
+        {
+            packageName: 'Basic',
+            subtitle1: 'Best for Solo Content Creators',
+            price: '$0.5',
+            subtitle2: 'Basic plan includes:',
+            features: [
+                'Unlimited Scheduled Posts',
+                'AI Captions & Hashtag Generator',
+                'AI Industry Experts',
+                'AI Speech to Text',
+                'Link in bio tool',
+            ],
+        },
+        {
+            packageName: 'Pro',
+            subtitle1: 'Perfect for Entrepreneurs',
+            price: '$1',
+            subtitle2: 'Pro plan includes:',
+            features: [
+                'Unlimited Scheduled Posts',
+                'AI Captions & Hashtag Generator',
+                'AI Industry Experts',
+                'AI Speech to Text',
+                'Link in bio tool',
+            ],
+        },
+        {
+            packageName: 'Premium',
+            subtitle1: 'Excellent for Agency Owners',
+            price: '$2.22',
+            subtitle2: 'Premium plan includes:',
+            features: [
+                'Unlimited Scheduled Posts',
+                'AI Captions & Hashtag Generator',
+                'AI Industry Experts',
+                'AI Speech to Text',
+                'Link in bio tool',
+                '24/7 Support'
+            ],
+        },
+    ];
+
     return (
-        <Box id={id} sx={{ textAlign: 'center', py: 10 }}>
+        <Box id={id} sx={{textAlign: 'center', py: 10}}>
             {/* Title */}
-            <Typography variant="h2" sx={{ mb: 4 }}>
+            <Typography variant="h2" sx={{mb: 4}}>
                 Best Pricing Available.
             </Typography>
 
             {/* Pricing Plans */}
-            <Box sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
-                {/* Pricing Plan 1 */}
-                <Card sx={{ minWidth: 200, mx: 2 }}>
-                    <CardContent>
-                        <Typography variant="h6">Basic</Typography>
-                        <Typography variant="h4">$9.99/month</Typography>
-                        <Typography variant="body1">Starter features</Typography>
-                    </CardContent>
-                </Card>
-
-                {/* Pricing Plan 2 */}
-                <Card sx={{ minWidth: 200, mx: 2 }}>
-                    <CardContent>
-                        <Typography variant="h6">Pro</Typography>
-                        <Typography variant="h4">$19.99/month</Typography>
-                        <Typography variant="body1">Advanced features</Typography>
-                    </CardContent>
-                </Card>
-
-                {/* Pricing Plan 3 */}
-                <Card sx={{ minWidth: 200, mx: 2 }}>
-                    <CardContent>
-                        <Typography variant="h6">Premium</Typography>
-                        <Typography variant="h4">$29.99/month</Typography>
-                        <Typography variant="body1">Premium features</Typography>
-                    </CardContent>
-                </Card>
-            </Box>
-
-            {/* Show Comparisons Button */}
-            <Button variant="contained" color="primary">
-                Show Comparisons
-            </Button>
+            <Container maxWidth={"lg"}>
+                <Grid container spacing={2} justifyContent="center">
+                    {pricingPackages.map((plan, index) => (
+                        <Grid key={index} item xs={12} sm={6} md={4}>
+                            <PackageCard plan={plan}/>
+                        </Grid>
+                    ))}
+                </Grid>
+            </Container>
         </Box>
     );
 };

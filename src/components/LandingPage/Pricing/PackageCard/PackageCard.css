@@ -1,0 +1,68 @@
+/* PackageCard.css */
+
+.package-card {
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 600px;
+    position: relative; /* Add position relative to the container */
+}
+
+.card-content {
+    padding: 0; /* Adjust as needed */
+    text-align: left;
+}
+
+.subtitle {
+    color: gray;
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.feature-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.checkmark-image {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    border-radius: 5px; /* Adjust the radius as needed */
+}
+
+.feature-box span {
+    display: flex;
+    align-items: center;
+}
+
+.start-for-free-button {
+    position: absolute; /* Position absolute to the container */
+    bottom: 2rem; /* Adjust the distance from the bottom as needed */
+    transform: translateX(-50%); /* Center horizontally */
+    display: inline-block;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, rgba(40, 152, 255, 0.8), rgba(171, 100, 241, 0.8));
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    height: 60px;
+    width: 200px;
+}
+
+.start-for-free-button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
