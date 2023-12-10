@@ -16,7 +16,7 @@ const Hero = () => {
 
     return (
         <Box className="hero-section"
-             sx={{mt: "100px", minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center"}}>
+             sx={{minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center"}}>
             <Container maxWidth="xl" className="hero-section-main" sx={{
                 flexGrow: 1,
                 display: "flex",

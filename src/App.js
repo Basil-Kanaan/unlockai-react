@@ -1,6 +1,5 @@
 import './App.css';
 import Home from "./pages/Home";
-import NavBar from "./components/NavBar/NavBar";
 import NotFound from "./pages/NotFound"; // Import NotFound component
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
@@ -16,8 +15,6 @@ function App() {
                     {/* Add the NotFound route */}
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
-
-                <NavBar/>
             </Router>
         </div>
     );

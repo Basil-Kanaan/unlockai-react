@@ -15,7 +15,8 @@ const Footer = () => {
                 color: '#fff',
                 py: 4,
                 height: "600px",
-                pt: "5"
+                pt: "5",
+                zIndex: 100
             }}
         >
             <Container>

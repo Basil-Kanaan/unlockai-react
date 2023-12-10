@@ -15,7 +15,7 @@ const InfluencerMarquee = () => {
         <Box sx={{my: 10}}>
             <Container sx={{marginBottom: "20px"}}>
                 <Typography variant={"h2"} sx={{width: "40rem", textAlign: "left"}}>
-                    Trusted by Influencers Across the Globe!
+                    Trusted by Influencers Across the Globe
                 </Typography>
             </Container>
             <Marquee gradient gradientWidth={200}>

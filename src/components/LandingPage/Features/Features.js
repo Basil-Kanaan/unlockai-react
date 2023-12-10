@@ -16,7 +16,7 @@ const Features = ({id}) => {
                  flexDirection: 'column',
                  alignItems: 'center',
                  textAlign: 'center',
-                 my: 10
+                 py: 10
              }}
         >
             {/* Section Title */}

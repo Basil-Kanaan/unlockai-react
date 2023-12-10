@@ -19,7 +19,7 @@ const Suggestions = () => {
             >
                 {/* Left Section */}
                 <Typography variant="h2" sx={{flex: 1, textAlign: "left"}}>
-                    Got any suggestions for our platform?<br/>
+                    Got any suggestions for our platform?<br/><br/>
                     Let us know!
                 </Typography>
 

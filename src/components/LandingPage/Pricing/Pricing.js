@@ -34,7 +34,7 @@ const Pricing = ({id}) => {
             ],
         },
         {
-            packageName: 'Premium',
+            packageName: <span style={{color: "#fcba03"}}>VIP</span>,
             subtitle1: 'Excellent for Agency Owners',
             price: '$2.22',
             subtitle2: 'Premium plan includes:',
@@ -58,7 +58,7 @@ const Pricing = ({id}) => {
 
             {/* Pricing Plans */}
             <Container maxWidth={"lg"}>
-                <Grid container spacing={2} justifyContent="center">
+                <Grid container spacing={4} justifyContent="center">
                     {pricingPackages.map((plan, index) => (
                         <Grid key={index} item xs={12} sm={6} md={4}>
                             <PackageCard plan={plan}/>

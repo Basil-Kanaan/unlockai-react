@@ -5,7 +5,7 @@
     flex-direction: column;
     border-radius: 10px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.1); /* Transparent background */
+    background: rgba(0, 0, 0, 0.05); /* Transparent background */
     border: 1px solid #000; /* Black border outline */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;

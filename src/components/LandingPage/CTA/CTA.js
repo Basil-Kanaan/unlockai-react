@@ -14,7 +14,7 @@ const CTA = ({left, right}) => {
                     justifyContent: 'space-between',
                     alignItems: 'center',
                     padding: '40px',
-                    my: 20,
+                    my: 15,
                     gap: 20,
                 }}
             >
