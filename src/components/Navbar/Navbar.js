@@ -27,10 +27,19 @@ const NavBar = () => {
 
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({behavior: 'smooth'});
+        const navbar = document.querySelector('.navbar');
+
+        if (section && navbar) {
+            const navbarHeight = navbar.offsetHeight;
+            const sectionOffset = section.offsetTop - navbarHeight;
+
+            window.scrollTo({
+                top: sectionOffset,
+                behavior: 'smooth',
+            });
         }
     };
+
 
     const drawerContent = (
         <List>
