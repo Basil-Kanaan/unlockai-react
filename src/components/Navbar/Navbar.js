@@ -164,7 +164,7 @@ const NavBar = () => {
                     </Typography>
                     {isSmallScreen && (
                         <IconButton onClick={toggleDrawer} edge="end" color="black" aria-label="menu">
-                            <MenuIcon />
+                            <MenuIcon/>
                         </IconButton>
                     )}
                 </Box>

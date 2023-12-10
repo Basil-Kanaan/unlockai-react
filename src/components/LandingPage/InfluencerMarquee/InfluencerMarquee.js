@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 import InfluencerCard from "./InfluencerCard";
 
 const InfluencerMarquee = () => {
-    const influencerData = Array.from({ length: 20 }, (_, index) => ({
+    const influencerData = Array.from({length: 20}, (_, index) => ({
         platform: 'Instagram', // You can change these values as needed
         accountName: `Influencer ${index + 1}`,
         followerCount: `${Math.floor(Math.random() * 1000000)}`, // Random follower count for demo
@@ -13,8 +13,8 @@ const InfluencerMarquee = () => {
 
     return (
         <Box sx={{my: 10}}>
-            <Container sx={{ marginBottom: "20px" }}>
-                <Typography variant={"h2"} sx={{ width: "40rem", textAlign: "left" }}>
+            <Container sx={{marginBottom: "20px"}}>
+                <Typography variant={"h2"} sx={{width: "40rem", textAlign: "left"}}>
                     Trusted by Influencers Across the Globe!
                 </Typography>
             </Container>

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
+import {Accordion, AccordionDetails, AccordionSummary, Typography} from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const FAQAccordion = ({ summary, details }) => {
+const FAQAccordion = ({summary, details}) => {
     return (
         <Accordion>
             <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<ExpandMoreIcon/>}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
             >

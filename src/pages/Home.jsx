@@ -15,42 +15,46 @@ import Suggestions from "../components/LandingPage/Suggestions/Suggestions";
 
 const Home = () => {
 
-        return (
-            <div>
-                    <Hero id={""} />
-                    <CTA id={""}
-                         left={<>Expand your reach<br/><span className={"gradient-text"}>in a few Clicks!</span></>}
-                         right={<>
-                             Supercharge your game with{' '}
-                             <span className={"gradient-text"} style={{fontWeight: 800, fontSize: "1.2rem"}}>UnlockAI!</span> Create, schedule, and engage
-                             with ease. <br/><br/> <span className={"gradient-text"} style={{fontWeight: 800, fontSize: "1.2rem"}}>🚀 ELEVATE</span> your online presence with a click – it's time to shine and
-                             stand out! <br/><br/>Ready to level up?!
-                         </>}
-                    />
-                    <InfluencerMarquee id={""}/>
+    return (
+        <div>
+            <Hero id={""}/>
+            <CTA id={""}
+                 left={<>Expand your reach<br/><span className={"gradient-text"}>in a few Clicks!</span></>}
+                 right={<>
+                     Supercharge your game with{' '}
+                     <span className={"gradient-text"}
+                           style={{fontWeight: 800, fontSize: "1.2rem"}}>UnlockAI!</span> Create, schedule, and engage
+                     with ease. <br/><br/> <span className={"gradient-text"}
+                                                 style={{fontWeight: 800, fontSize: "1.2rem"}}>🚀 ELEVATE</span> your
+                     online presence with a click – it's time to shine and
+                     stand out! <br/><br/>Ready to level up?!
+                 </>}
+            />
+            <InfluencerMarquee id={""}/>
 
-                    <Features id={"features-section"}/>
-                    <CTA id={""}
-                         left={<>AI Scheduling,<br/><span className={"gradient-text"}>For You!</span></>}
-                         right={
-                             <>
-                                 <span className={"gradient-text"} style={{fontWeight: 800, fontSize: "1.2rem"}}>UnlockAI</span> allows you to create and
-                                 schedule your social media posts all in one! Talk to experts to get the best
-                                 advice.
-                             </>
-                         }
-                    />
-                    <Testimonials id={"testimonials-section"} />
-                    <Pricing id={"pricing-section"} />
-                    <FAQ id={"faq-section"} />
-                    <Suggestions />
-                    <Trial id={""} />
-                    <Footer />
+            <Features id={"features-section"}/>
+            <CTA id={""}
+                 left={<>AI Scheduling,<br/><span className={"gradient-text"}>For You!</span></>}
+                 right={
+                     <>
+                         <span className={"gradient-text"}
+                               style={{fontWeight: 800, fontSize: "1.2rem"}}>UnlockAI</span> allows you to create and
+                         schedule your social media posts all in one! Talk to experts to get the best
+                         advice.
+                     </>
+                 }
+            />
+            <Testimonials id={"testimonials-section"}/>
+            <Pricing id={"pricing-section"}/>
+            <FAQ id={"faq-section"}/>
+            <Suggestions/>
+            <Trial id={""}/>
+            <Footer/>
 
-                <button className="try-for-free-button">TRY FOR FREE</button>
-                <Background />
-            </div>
-        );
+            <button className="try-for-free-button">TRY FOR FREE</button>
+            <Background/>
+        </div>
+    );
 };
 
 export default Home;

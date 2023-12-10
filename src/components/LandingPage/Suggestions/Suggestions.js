@@ -1,7 +1,7 @@
 // Suggestions.js
 
 import React from 'react';
-import { Box, Card, CardContent, Container, Typography, TextField, Grid } from '@mui/material';
+import {Box, Card, CardContent, Container, Grid, TextField, Typography} from '@mui/material';
 import './Suggestions.css';
 
 const Suggestions = () => {
@@ -18,25 +18,25 @@ const Suggestions = () => {
                 }}
             >
                 {/* Left Section */}
-                <Typography variant="h2" sx={{ flex: 1, textAlign: "left"}}>
+                <Typography variant="h2" sx={{flex: 1, textAlign: "left"}}>
                     Got any suggestions for our platform?<br/>
                     Let us know!
                 </Typography>
 
                 {/* Right Section */}
-                <Card className={"suggestions-card"} sx={{ flex: 2}}>
+                <Card className={"suggestions-card"} sx={{flex: 2}}>
                     <CardContent>
                         <form>
                             {/* First Row */}
                             <Grid container spacing={2}>
                                 <Grid item xs={12} sm={4}>
-                                    <TextField label="Name" fullWidth />
+                                    <TextField label="Name" fullWidth/>
                                 </Grid>
                                 <Grid item xs={12} sm={4}>
-                                    <TextField label="Email Address" fullWidth />
+                                    <TextField label="Email Address" fullWidth/>
                                 </Grid>
                                 <Grid item xs={12} sm={4}>
-                                    <TextField label="Contact Number" fullWidth />
+                                    <TextField label="Contact Number" fullWidth/>
                                 </Grid>
 
                                 {/* Second Row */}
@@ -50,7 +50,7 @@ const Suggestions = () => {
                                 </Grid>
 
                                 {/* Third Row */}
-                                <Grid item xs={12} sx={{ textAlign: 'right' }}>
+                                <Grid item xs={12} sx={{textAlign: 'right'}}>
                                     <Box
                                         component="button"
                                         sx={{

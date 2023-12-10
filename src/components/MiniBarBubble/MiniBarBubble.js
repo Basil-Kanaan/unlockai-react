@@ -4,9 +4,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './MiniBarBubble.css';
 
-const MiniBarBubble = ({ color, backgroundColor, children }) => {
+const MiniBarBubble = ({color, backgroundColor, children}) => {
     return (
-        <div className="mini-bar-bubble" style={{ backgroundColor}}>
+        <div className="mini-bar-bubble" style={{backgroundColor}}>
             {React.Children.toArray(children)[0]}
             <span className="dot" style={{backgroundColor: color}}></span>
             {React.Children.toArray(children)[1]}

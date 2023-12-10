@@ -1,7 +1,7 @@
 // Testimonials.js
 
 import React from 'react';
-import { Box, Container, Grid, Typography } from '@mui/material';
+import {Box, Container, Grid, Typography} from '@mui/material';
 import TestimonialCard from './TestimonialCard/TestimonialCard';
 import MiniBarBubble from "../../MiniBarBubble/MiniBarBubble";
 
@@ -32,9 +32,9 @@ const testimonialsData = [
     },
 ];
 
-const Testimonials = ({ id }) => {
+const Testimonials = ({id}) => {
     return (
-        <Box id={id} sx={{ textAlign: 'center', py: 10 }}>
+        <Box id={id} sx={{textAlign: 'center', py: 10}}>
             {/* Header */}
             <MiniBarBubble color={"rgba(40, 2, 124, 0.15)"} backgroundColor={"rgba(40, 2, 124, 0.15)"}>
                 <Typography variant={"body1"} color={"#28027C"}>
@@ -45,7 +45,7 @@ const Testimonials = ({ id }) => {
                 </Typography>
             </MiniBarBubble>
 
-            <Typography variant="h2" sx={{ mb: 4 }}>
+            <Typography variant="h2" sx={{mb: 4}}>
                 Trusted by Millions.
             </Typography>
 

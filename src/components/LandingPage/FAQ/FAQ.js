@@ -1,10 +1,10 @@
 import React from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import {Box, Container, Typography} from '@mui/material';
 import MiniBarBubble from "../../MiniBarBubble/MiniBarBubble";
 import FAQAccordion from './FAQAccordion';
 import './FAQ.css';
 
-const FAQ = ({ id }) => {
+const FAQ = ({id}) => {
     // FAQ Dictionary
     const QA = {
         "What are the Plan Options?": "Unlock AI provides various plan options to suit your needs, including different features and subscription durations. Explore our Plans page for more details.",
@@ -16,7 +16,7 @@ const FAQ = ({ id }) => {
     };
 
     return (
-        <Box id={id} sx={{ textAlign: 'center', py: 10 }}>
+        <Box id={id} sx={{textAlign: 'center', py: 10}}>
             {/* FAQ Title */}
             <MiniBarBubble
                 backgroundColor="rgba(96, 2, 124, 0.15)"
@@ -31,13 +31,14 @@ const FAQ = ({ id }) => {
             </MiniBarBubble>
 
             {/* Have a question? */}
-            <Typography variant="h2" sx={{ my: 4 }}>
+            <Typography variant="h2" sx={{my: 4}}>
                 Have a question?
             </Typography>
 
             {/* Support Team */}
-            <Typography variant="body1" color={"gray"} sx={{ mx: 'auto', mb: 5, maxWidth: 400 }}>
-                Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.
+            <Typography variant="body1" color={"gray"} sx={{mx: 'auto', mb: 5, maxWidth: 400}}>
+                Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle
+                support requests.
             </Typography>
 
             {/* FAQ Accordions */}

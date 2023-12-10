@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
 import './TestimonialCard.css';
 
-const TestimonialCard = ({ profile, author, testimonial }) => {
+const TestimonialCard = ({profile, author, testimonial}) => {
     const placeholderImage = 'https://source.unsplash.com/150x150/?portrait';
 
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Typography } from "@mui/material";
+import {Box, Container, Typography} from "@mui/material";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -29,7 +29,7 @@ const Footer = () => {
                     }}
                 >
                     {/* Left Section */}
-                    <Box sx={{ flex: 1 }}>
+                    <Box sx={{flex: 1}}>
                         <Box className={"footer-logo-holder"} sx={{display: 'flex', flexDirection: 'column'}}>
                             <Typography variant="h4" fontWeight='bold' className="footer-text">
                                 UnlockAI
@@ -43,15 +43,15 @@ const Footer = () => {
                                 <FacebookIcon className="white-icon" fontSize={"2rem"}/>
                                 <YouTubeIcon className="white-icon" fontSize={"2rem"}/>
                                 <TwitterIcon className="white-icon" fontSize={"2rem"}/>
-                                <LinkedInIcon className="white-icon" fontSize={"2rem"} />
+                                <LinkedInIcon className="white-icon" fontSize={"2rem"}/>
                             </Box>
                         </Box>
                     </Box>
 
                     {/* Right Section */}
-                    <Box sx={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
+                    <Box sx={{flex: 1, display: 'flex', justifyContent: 'center'}}>
                         {/* Column 1: Company */}
-                        <Box sx={{ pr: 10 }}>
+                        <Box sx={{pr: 10}}>
                             <Typography variant="h6" className="footer-text" fontWeight={"600"}>Company</Typography>
                             <Typography variant="body2" className="footer-text">Pricing</Typography>
                             <Typography variant="body2" className="footer-text">Our Story</Typography>
@@ -61,7 +61,7 @@ const Footer = () => {
                         </Box>
 
                         {/* Column 2: Help */}
-                        <Box sx={{ pr: 10 }}>
+                        <Box sx={{pr: 10}}>
                             <Typography variant="h6" className="footer-text" fontWeight={"600"}>Help</Typography>
                             <Typography variant="body2" className="footer-text">Help Centre</Typography>
                             <Typography variant="body2" className="footer-text">Password Reset</Typography>

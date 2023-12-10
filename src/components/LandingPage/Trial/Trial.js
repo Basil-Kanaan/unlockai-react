@@ -1,12 +1,12 @@
 // Trial.js
 import React from 'react';
-import { Container, Typography } from '@mui/material';
+import {Container, Typography} from '@mui/material';
 import './Trial.css';
 import {Link as RouterLink} from "react-router-dom"; // Add your styling if needed
 
 const Trial = () => {
     return (
-        <Container maxWidth="md" className="trial-container" sx={{ py: 10 }}>
+        <Container maxWidth="md" className="trial-container" sx={{py: 10}}>
             <div className="main-card-outer">
                 <div className={"main-card-inner"}>
                     <div className="logo-row">

@@ -75,7 +75,8 @@ const Hero = () => {
                         {/* Terms of Use and Privacy Policy */}
                         <Typography variant="body2"
                                     sx={{color: '#C3B1E1', marginTop: 1, textAlign: 'center', fontWeight: 'bold'}}>
-                            <a href="/terms" style={{color: '#C3B1E1', textDecoration: 'underline'}}>Terms of Use</a> and <a
+                            <a href="/terms" style={{color: '#C3B1E1', textDecoration: 'underline'}}>Terms of
+                                Use</a> and <a
                             href="/privacy" style={{color: '#C3B1E1', textDecoration: 'underline'}}>Privacy Policy</a>.
                         </Typography>
                     </div>
