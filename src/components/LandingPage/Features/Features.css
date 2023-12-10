@@ -1,3 +1,18 @@
+/* Features.css */
+
+/* Center the feature cards horizontally within their grid */
+.grid-container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* Ensure the grid items (cards) have consistent width */
+.grid-item {
+    flex: 0 0 auto;
+}
+
+
 .features-button {
     color: white;
     text-decoration: none;

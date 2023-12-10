@@ -17,6 +17,7 @@
     height: 250px;
     width: 350px;
     overflow: hidden; /* Ensure the content doesn't overflow */
+    max-width: 100%;
 }
 
 .feature-card img {

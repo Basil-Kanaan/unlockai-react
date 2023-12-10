@@ -4,6 +4,7 @@ import React from 'react';
 import {Box, Container, Grid, Typography} from '@mui/material';
 import TestimonialCard from './TestimonialCard/TestimonialCard';
 import MiniBarBubble from "../../MiniBarBubble/MiniBarBubble";
+import "./Testimonials.css";
 
 const testimonialsData = [
     {
@@ -51,9 +52,9 @@ const Testimonials = ({id}) => {
 
             <Container maxWidth={"lg"}>
                 {/* Testimonials Grid */}
-                <Grid container spacing={3} justifyContent="center">
+                <Grid container spacing={3} justifyContent="center" className="grid-container">
                     {testimonialsData.map((testimonial, index) => (
-                        <Grid key={index} item xs={12} sm={6} md={4}>
+                        <Grid key={index} item xs={12} sm={6} md={4} className="grid-item">
                             <TestimonialCard
                                 author={testimonial.author}
                                 testimonial={testimonial.testimonial}

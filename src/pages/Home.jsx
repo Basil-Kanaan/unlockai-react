@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import Hero from '../components/LandingPage/Hero/Hero';
 import Features from '../components/LandingPage/Features/Features';
 import Testimonials from '../components/LandingPage/Testimonials/Testimonials';
@@ -38,41 +38,45 @@ const Home = () => {
 
     return (
         <div>
-            <div className={"landing-body"} style={{ paddingTop: navBarHeight }}>
-                    <Hero id={""}/>
-                    <CTA id={""}
-                         left={<span style={{fontSize: "5rem"}}>Expand your reach<br/><span className={"gradient-text"}>in a few Clicks!</span></span>}
-                         right={<>
-                             Supercharge your game with{' '}
-                             <span className={"gradient-text"}
-                                   style={{fontWeight: 800, fontSize: "1.2rem"}}>UnlockAI!</span> Create, schedule, and engage
-                             with ease. <br/><br/> <span className={"gradient-text"}
-                                                         style={{fontWeight: 800, fontSize: "1.2rem"}}>🚀 ELEVATE</span> your
-                             online presence with a click – it's time to shine and
-                             stand out! <br/><br/>Ready to level up?!
-                         </>}
-                    />
-                    <InfluencerMarquee id={""}/>
+            <div className={"landing-body"} style={{paddingTop: navBarHeight}}>
+                <Hero id={""}/>
+                <CTA id={""}
+                     left={<span style={{fontSize: "3rem"}}>Expand your reach<br/><span className={"gradient-text"}>in a few Clicks!</span></span>}
+                     right={<>
+                         Supercharge your game with{' '}
+                         <span className={"gradient-text"}
+                               style={{fontWeight: 800, fontSize: "1.2rem"}}>UnlockAI!</span> Create, schedule, and
+                         engage
+                         with ease. <br/><br/> <span className={"gradient-text"}
+                                                     style={{
+                                                         fontWeight: 800,
+                                                         fontSize: "1.2rem"
+                                                     }}>🚀 ELEVATE</span> your
+                         online presence with a click – it's time to shine and
+                         stand out! <br/><br/>Ready to level up?!
+                     </>}
+                />
+                <InfluencerMarquee id={""}/>
 
-                    <Features id={"features-section"}/>
-                    <CTA id={""}
-                         left={<span style={{fontSize: "5rem"}}>AI Scheduling,<br/><span className={"gradient-text"}>For You!</span></span>}
-                         right={
-                             <>
+                <Features id={"features-section"}/>
+                <CTA id={""}
+                     left={<span style={{fontSize: "3rem"}}>AI Scheduling,<br/><span className={"gradient-text"}>For You!</span></span>}
+                     right={
+                         <>
                          <span className={"gradient-text"}
                                style={{fontWeight: 800, fontSize: "1.2rem"}}>UnlockAI</span> allows you to create and
-                                 schedule your social media posts all in one! Talk to experts to get the best
-                                 advice.
-                             </>
-                         }
-                    />
-                    <Testimonials id={"testimonials-section"}/>
-                    <Pricing id={"pricing-section"}/>
-                    <FAQ id={"faq-section"}/>
-                    <Suggestions/>
-                    <Trial id={""}/>
-                    <Footer/>
-                </div>
+                             schedule your social media posts all in one! Talk to experts to get the best
+                             advice.
+                         </>
+                     }
+                />
+                <Testimonials id={"testimonials-section"}/>
+                <Pricing id={"pricing-section"}/>
+                <FAQ id={"faq-section"}/>
+                <Suggestions/>
+                <Trial id={""}/>
+                <Footer/>
+            </div>
 
             <NavBar/>
             <Background/>

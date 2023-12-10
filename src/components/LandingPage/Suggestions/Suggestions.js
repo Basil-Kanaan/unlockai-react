@@ -8,6 +8,7 @@ const Suggestions = () => {
     return (
         <Container maxWidth={"xl"}>
             <Box
+                className="suggestions-container"
                 sx={{
                     display: 'flex',
                     justifyContent: 'space-between',
@@ -18,13 +19,13 @@ const Suggestions = () => {
                 }}
             >
                 {/* Left Section */}
-                <Typography variant="h2" sx={{flex: 1, textAlign: "left"}}>
+                <Typography variant="h2" className="suggestions-left">
                     Got any suggestions for our platform?<br/><br/>
                     Let us know!
                 </Typography>
 
                 {/* Right Section */}
-                <Card className={"suggestions-card"} sx={{flex: 2}}>
+                <Card className="suggestions-card">
                     <CardContent>
                         <form>
                             {/* First Row */}
@@ -77,7 +78,6 @@ const Suggestions = () => {
                         </form>
                     </CardContent>
                 </Card>
-
             </Box>
         </Container>
     );

@@ -9,6 +9,7 @@ const CTA = ({left, right}) => {
     return (
         <Container maxWidth={"xl"}>
             <Box
+                className="cta-container"
                 sx={{
                     display: 'flex',
                     justifyContent: 'space-between',
@@ -19,16 +20,22 @@ const CTA = ({left, right}) => {
                 }}
             >
                 {/* Left Section */}
-                <Typography variant="h2" sx={{flex: 1, textAlign: "left"}}>
+                <Typography variant="h2" className="cta-left">
                     {left}
                 </Typography>
 
                 {/* Right Section */}
-                <div style={{flex: 1, display: "flex", flexDirection: "column", gap: "2rem"}}>
-                    <Card className={"cta-card"}>
+                <div className="cta-right">
+                    <Card className="cta-card">
                         <CardContent>
-                            <Typography fontSize={"1.1rem"} fontWeight="600" sx={{color: "rgba(0,0,0,0.5)"}}
-                                        variant="body1">{right}</Typography>
+                            <Typography
+                                fontSize="1.1rem"
+                                fontWeight="600"
+                                sx={{color: 'rgba(0,0,0,0.5)'}}
+                                variant="body1"
+                            >
+                                {right}
+                            </Typography>
                         </CardContent>
                     </Card>
                     <Typography

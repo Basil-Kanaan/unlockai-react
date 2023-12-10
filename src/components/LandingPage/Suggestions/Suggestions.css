@@ -1,6 +1,23 @@
 /* Suggestions.css */
+
+.suggestions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.suggestions-left {
+    flex: 1;
+    text-align: left;
+}
+
 .suggestions-card {
-    background: transparent;
+    flex: 1;
+    max-width: 600px; /* Adjust the max-width as needed for your design */
     padding: 2rem;
     text-align: left;
 }
@@ -15,6 +32,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background: rgba(40, 152, 255, 0.8);
     font-size: 1.1rem;
+    max-width: 100%;
 }
 
 .suggestions-button:hover {

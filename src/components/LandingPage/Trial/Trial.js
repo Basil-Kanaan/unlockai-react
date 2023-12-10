@@ -6,7 +6,7 @@ import {Link as RouterLink} from "react-router-dom"; // Add your styling if need
 
 const Trial = () => {
     return (
-        <Container maxWidth="md" className="trial-container" sx={{py: 10, my:10}}>
+        <Container maxWidth="md" className="trial-container" sx={{py: 10, my: 10}}>
             <div className="main-card-outer">
                 <div className={"main-card-inner"}>
                     <div className="logo-row">

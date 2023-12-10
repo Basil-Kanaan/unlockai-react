@@ -1,0 +1,12 @@
+/* Testimonials.css */
+
+/* Center the testimonial cards horizontally within their grid */
+.grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ensure the grid items (testimonial cards) have consistent width */
+.grid-item {
+    flex: 0 0 auto;
+}
